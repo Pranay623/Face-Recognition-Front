@@ -1,0 +1,109 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    background-image: url('../profile/assets/bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo {
+    width: 8vb;
+    height: 8vh;
+    margin-bottom: 25rem;
+    margin-right: 15rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.user-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    margin-left: 5rem;
+    margin-top: -5rem;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 5rem;
+    margin-bottom: 4rem;
+}
+
+.welcome-text strong {
+    font-size: 48px;
+    color: #078A9E;
+}
+
+.camera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 300px;
+    background-color: white;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+}
+
+.close-button {
+    margin-top: 10px;
+}
+
+button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.user-name {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.user-name p {
+    font-size: 30px;
+    color: green;
+    text-shadow: 0 0 5px green;
+    font-weight: bold;
+    text-align: center;
+}
+
+.attendance-marked {
+    transform: translateX(-100%);
+}

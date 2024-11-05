@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.profile-container {
+  display: flex;
+  background-color: #f8f9fa; /* Slightly lighter for a soft feel */
+  height: 100vh;
+}
+
+.profile-sidebar {
+  width: 100px;
+  background-image: url('./assests/bg.jpeg');
+  background-size: cover; 
+  background-color: #e8ecf3; /* Sidebar background color */
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.logo {
+  width: 30px; 
+  height: 30px; 
+  margin-bottom: 15px; 
+}
+
+.sidebar-icon {
+  font-size: 20px;
+  padding: 15px;
+  color: #555; /* Sidebar icon color */
+  cursor: pointer;
+  transition: color 0.3s; /* Smooth transition on hover */
+}
+
+.sidebar-icon:hover {
+  color: #5b9df7; /* Change color on hover for interaction */
+}
+
+.profile-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ffffff; /* White background for content area */
+  box-shadow: -3px 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Space below header */
+}
+
+.user-settings {
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  margin-right: 10px;
+  color: #333; /* Darker text for better readability */
+  font-size: 18px; /* Slightly increase font size */
+}
+
+.user-avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensure the image covers the space */
+  border: 2px solid #ddd; /* Border for avatar */
+}
+
+.profile-details {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profile-image-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd; /* Add border to profile image */
+}
+
+.camera-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  background-color: #ffffff; /* Background for camera icon */
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  color: #555;
+}
+
+.user-info {
+  margin-left: 20px;
+}
+
+.user-info p {
+  margin-bottom: 10px;
+}
+
+.edit-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: 1px solid #5b9df7;
+  background-color: transparent;
+  color: #5b9df7;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.edit-button:hover {
+  background-color: #5b9df7; /* Highlight on hover */
+  color: #ffffff; /* White text on hover */
+}
+
+.upload-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center; /* Center the buttons */
+}
+
+.upload-button {
+  padding: 10px 20px;
+  border: 1px dashed #5b9df7;
+  color: #5b9df7;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.upload-button:hover {
+  background-color: #eef4ff; /* Light background on hover */
+}
+
+/* Additional styles for user elements */
+.user-name-highlight {
+  color: #5b9df7; /* Highlight color for user name */
+  font-size: 24px; 
+  font-weight: bold;
+}
+
+.user-info {
+  margin-left: 0; /* Reset margin for center alignment */
+  text-align: center; /* Center text for user info */
+}
+
+.user-email {
+  color: #e63946; /* Eye-catching color for email */
+  margin-top: -5rem; /* Space between username and email */
+}
+
+.date-time-section {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 20px; 
+}
+
+.date-time {
+  color: #333; 
+  font-size: 18px; 
+  margin: 5px 0; 
+}
+
+.attendance-button {
+  padding: 10px 20px;
+  border: 1px dashed #5b9df7; 
+  color: #5b9df7; 
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 16px; 
+  transition: background-color 0.3s; 
+}
+
+.attendance-button:hover {
+  background-color: #eef4ff; 
+}
