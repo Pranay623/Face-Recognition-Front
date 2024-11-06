@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './LoginPage.css';
+import './Loginpage.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaUser, FaLock } from 'react-icons/fa';
 import logo from './assets/logo.jpg'; // Ensure this path is correct for your logo image
