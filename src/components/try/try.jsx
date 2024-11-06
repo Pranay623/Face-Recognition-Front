@@ -145,9 +145,16 @@ const Prep = () => {
         <br />
         <br />
         <div className="sidebar-icon">🏠</div>
+
+
         <div className="sidebar-icon">📷</div>
+
+
         <div className="sidebar-icon">📋</div>
-        <div className="sidebar-icon">⚙️</div>
+  
+ 
+        <div className="sidebar-icon">➕</div>
+
       </div>
 
       {/* Profile Content */}

@@ -11,9 +11,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-background-image: url('./assets/background1.jpeg');
-background-position: center;
-background-size: cover;
+  background-image: url('./assets/background1.jpeg');
+  background-position: center;
+  background-size: cover;
 
 }
 

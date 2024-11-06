@@ -7,44 +7,46 @@
 
 .profile-container {
   display: flex;
-  background-color: #f8f9fa; /* Slightly lighter for a soft feel */
+  background-color: #f8f9fa;
+  width: 100vw;
   height: 100vh;
 }
 
 .profile-sidebar {
   width: 100px;
   background-image: url('./assests/bg.jpeg');
-  background-size: cover; 
-  background-color: #e8ecf3; /* Sidebar background color */
+  background-size: cover;
+  background-color: #e8ecf3;
   padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-  width: 30px; 
-  height: 30px; 
-  margin-bottom: 15px; 
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+  margin-left: -1.3rem;
 }
 
 .sidebar-icon {
   font-size: 20px;
   padding: 15px;
-  color: #555; /* Sidebar icon color */
+  color: #555;
   cursor: pointer;
-  transition: color 0.3s; /* Smooth transition on hover */
+  transition: color 0.3s;
 }
 
 .sidebar-icon:hover {
-  color: #5b9df7; /* Change color on hover for interaction */
+  color: #5b9df7;
 }
 
 .profile-content {
   flex-grow: 1;
   padding: 20px;
-  background-color: #ffffff; /* White background for content area */
+  background-color: #ffffff;
   box-shadow: -3px 0 5px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
@@ -53,7 +55,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px; /* Space below header */
+  margin-bottom: 20px;
 }
 
 .user-settings {
@@ -63,16 +65,16 @@
 
 .user-name {
   margin-right: 10px;
-  color: #333; /* Darker text for better readability */
-  font-size: 18px; /* Slightly increase font size */
+  color: #333;
+  font-size: 18px;
 }
 
 .user-avatar {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  object-fit: cover; /* Ensure the image covers the space */
-  border: 2px solid #ddd; /* Border for avatar */
+  object-fit: cover;
+  border: 2px solid #ddd;
 }
 
 .profile-details {
@@ -92,7 +94,7 @@
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #ddd; /* Add border to profile image */
+  border: 2px solid #ddd;
 }
 
 .camera-icon {
@@ -100,11 +102,14 @@
   bottom: 10px;
   right: 10px;
   font-size: 20px;
-  background-color: #ffffff; /* Background for camera icon */
+  background-color: #ffffff;
   border-radius: 50%;
   padding: 5px;
   cursor: pointer;
   color: #555;
+}
+.camera{
+  margin-left: 35vw;
 }
 
 .user-info {
@@ -123,19 +128,19 @@
   color: #5b9df7;
   cursor: pointer;
   border-radius: 4px;
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .edit-button:hover {
-  background-color: #5b9df7; /* Highlight on hover */
-  color: #ffffff; /* White text on hover */
+  background-color: #5b9df7;
+  color: #ffffff;
 }
 
 .upload-buttons {
   display: flex;
   gap: 15px;
   margin-top: 20px;
-  justify-content: center; /* Center the buttons */
+  justify-content: center;
 }
 
 .upload-button {
@@ -145,54 +150,66 @@
   cursor: pointer;
   border-radius: 4px;
   background-color: transparent;
-  transition: background-color 0.3s; /* Smooth transition on hover */
+  transition: background-color 0.3s;
 }
 
 .upload-button:hover {
-  background-color: #eef4ff; /* Light background on hover */
+  background-color: #eef4ff;
 }
 
-/* Additional styles for user elements */
 .user-name-highlight {
-  color: #5b9df7; /* Highlight color for user name */
-  font-size: 24px; 
+  color: #5b9df7;
+  font-size: 30px;
   font-weight: bold;
 }
 
 .user-info {
-  margin-left: 0; /* Reset margin for center alignment */
-  text-align: center; /* Center text for user info */
+  margin-left: 0;
+  text-align: center;
 }
 
 .user-email {
-  color: #e63946; /* Eye-catching color for email */
-  margin-top: -5rem; /* Space between username and email */
+  color: #e63946;
+  margin-top: -5rem;
+  font-size: 20px;
 }
 
 .date-time-section {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  margin-top: 20px; 
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .date-time {
-  color: #333; 
-  font-size: 18px; 
-  margin: 5px 0; 
+  color: #333;
+  font-size: 18px;
+  margin: 5px 0;
 }
 
 .attendance-button {
   padding: 10px 20px;
-  border: 1px dashed #5b9df7; 
-  color: #5b9df7; 
+  border: 1px dashed #5b9df7;
+  color: #5b9df7;
   cursor: pointer;
   border-radius: 4px;
   background-color: transparent;
-  font-size: 16px; 
-  transition: background-color 0.3s; 
+  font-size: 16px;
+  transition: background-color 0.3s;
 }
 
 .attendance-button:hover {
-  background-color: #eef4ff; 
+  background-color: #eef4ff;
+}
+
+.attendance-message{
+  margin-left: 30rem;
+  
+}
+.attendance-message p{
+  font-size: 24px;
+  color: #e63946;
+}
+.attendance-message p strong{
+  color: green;
 }
