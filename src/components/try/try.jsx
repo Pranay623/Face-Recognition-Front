@@ -38,7 +38,7 @@ const Prep = () => {
       if (response.data) {
         setUserName(response.data.userName);
         setUserEmail(response.data.userEmail);
-        setUserImage(response.data.image ? `https://face-recognition-backend-gamma.vercel.app/uploads/${response.data.image}` : null);
+        setUserImage(response.data.image || null);
       }
     } catch (err) {
       console.error("Error fetching user data:", err);
@@ -93,6 +93,9 @@ const Prep = () => {
       if (response.data && response.data.status === "SUCCESS") {
         setUserName(response.data.userName);
         setAttendanceMarked(true);
+        if (response.data.imageUrl) {
+          setUserImage(response.data.imageUrl);  // Set the uploaded image URL from Cloudinary
+        }
       } else {
         setError("Attendance marking failed.");
       }

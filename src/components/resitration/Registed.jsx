@@ -23,7 +23,7 @@ const SignUpPage = () => {
     }
 
     try {
-      const response = await fetch('https://face-recognition-backend-gamma.vercel.app/signup', {
+      const response = await fetch('https://face-recognition-backend-gamma.vercel.app/user/signup', {
         method: 'POST',
         body: formData,
       });
